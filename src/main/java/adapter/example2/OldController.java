@@ -1,9 +1,14 @@
-package adapter;
+package adapter.example2;
+
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 
 public class OldController {
     final TVSetOldInterface tv;
+    @Getter
+    @Setter
     Date date;
 
     public OldController(TVSetOldInterface tv) {
@@ -12,9 +17,5 @@ public class OldController {
 
     public void setVolume(int volume){
         tv.setVolume(volume);
-    }
-
-    void setDate(Date date){
-        this.date = date;
     }
 }

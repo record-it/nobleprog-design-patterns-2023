@@ -1,6 +1,5 @@
 package facade;
 
-import lombok.Data;
 import lombok.ToString;
 
 import java.util.ArrayList;

@@ -1,9 +1,9 @@
-package adapter;
+package adapter.example2;
 
-public class TVSetAdapter implements TVSetOldInterface {
+public class TVSetAdapterForOldInterface implements TVSetOldInterface {
     final TVSetModern set;
 
-    public TVSetAdapter(TVSetModern set) {
+    public TVSetAdapterForOldInterface(TVSetModern set) {
         this.set = set;
     }
 

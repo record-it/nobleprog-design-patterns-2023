@@ -1,4 +1,4 @@
-package adapter;
+package adapter.example3;
 import java.time.LocalDate;
 import java.util.Date;
 
