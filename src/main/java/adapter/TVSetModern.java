@@ -1,11 +1,12 @@
 package adapter;
 
+import java.time.LocalDate;
 import java.util.Date;
 
-public class TVSet {
-    Date date = new Date();
+public class TVSetModern {
+    LocalDate date = LocalDate.now();
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

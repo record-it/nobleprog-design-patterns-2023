@@ -3,14 +3,14 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class DataAdapter {
-    private final Date adaptee;
+    private final LocalDate adaptee;
 
 
-    public DataAdapter(Date adaptee) {
+    public DataAdapter(LocalDate adaptee) {
         this.adaptee = adaptee;
     }
 
-    public LocalDate adapte() {
-        return LocalDate.of(adaptee.getYear(), adaptee.getMonth() + 1, adaptee.getDate());
+    public Date adapte() {
+        return new Date(adaptee.getYear() - 1900, adaptee.getMonthValue() - 1, adaptee.getDayOfMonth());
     }
 }
