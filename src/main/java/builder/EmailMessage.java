@@ -1,6 +1,8 @@
 package builder;
 
-public class EmailMessage {
+import factory.Message;
+
+public class EmailMessage extends Message {
     private String to;
     private String from;
     private String subject;
@@ -50,13 +52,23 @@ public class EmailMessage {
         return content;
     }
 
+    @Override
+    public String format() {
+        return "from: " + from +"\nto: " + to + "\ncontent: " + content;
+    }
+
+    @Override
+    public Message clone() {
+        return EmailMessage.builder().to(to).from(from).build();
+    }
+
     public interface RequireTo{
         RequireFrom to(String to);
     }
     public interface RequireFrom{
         Builder from(String from);
     }
-
+    // dodaj pole content jako wymagane
     public static RequireTo builder(){
         final Builder builder = new Builder();
         return to -> {
