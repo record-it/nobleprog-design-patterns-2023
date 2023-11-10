@@ -13,6 +13,7 @@ public class Demo {
         TVSetModern set = new TVSetModern();
         TVSetAdapterForOldInterface adapter = new TVSetAdapterForOldInterface(set);
         OldController controller = new OldController(adapter);
+        // kod niezmienialny
         controller.setVolume(49);
         System.out.println(set.getVolume());
     }

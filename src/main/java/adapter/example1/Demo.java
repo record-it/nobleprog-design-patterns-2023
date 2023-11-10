@@ -10,7 +10,7 @@ public class Demo {
     public static void main(String[] args) {
         TVSetOld tvSet = new TVSetOld();
         ModerController controller = new ModerControllerForOldTvAdapter(tvSet);
-
+        // kod klienta wymaga metod klasy ModerController
         controller.volumeUp();
         controller.volumeUp();
     }

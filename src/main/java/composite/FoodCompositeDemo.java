@@ -3,7 +3,7 @@ package composite;
 import java.util.List;
 // zdefiniuj klasę Egg, która tworzy jajko o wadze 50 i kaloryczności 50
 // stwórz posiłek breakfast składający się z sandwitcha i 2 jajek
-// wyświetl kaloryczność i wagę posiłku
+// wyświetl kaloryczność i wagę posiłku breakfast
 public class FoodCompositeDemo {
     public static void main(String[] args) {
         Meal sandwitch = new Meal(
