@@ -26,6 +26,7 @@ public class EmailMessage extends Message {
         this.content = content;
     }
 
+
     @Override
     public String toString() {
         return "EmailMessage{" +
