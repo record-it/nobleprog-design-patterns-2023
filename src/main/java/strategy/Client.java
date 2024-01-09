@@ -7,6 +7,7 @@ public class Client {
     private final TaxStrategy tax;
     @Getter
     private final String name;
+
     public Client(TaxStrategy tax, String name) {
         this.tax = tax;
         this.name = name;
